@@ -29,6 +29,7 @@
     "clean": "del build",
     "prebuild": "run-s clean",
     "predev": "run-s clean",
+    "cli": "node bin/cli.js",
     "pretest": "run-s build",
     "docs": "typedoc",
     "prepare": "husky install",

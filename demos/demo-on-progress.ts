@@ -14,8 +14,7 @@ dotenv.config()
 async function main() {
   const api = new ChatGPTAPI({ apiKey: process.env.OPENAI_API_KEY })
 
-  const prompt =
-    'Write a python version of bubble sort. Do not include example usage.'
+  const prompt = 'draw an ascii art that says "forge". \n\n'
 
   console.log(prompt)
   const res = await api.sendMessage(prompt, {
